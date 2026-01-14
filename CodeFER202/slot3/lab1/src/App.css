@@ -1,0 +1,83 @@
+/* Nền toàn trang */
+body {
+  background-color: #f1f5f9;
+}
+
+/* Khung mỗi sinh viên */
+.student-card {
+  border-radius: 18px;
+  border: 2px solid #e5e7eb;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  background: #ffffff;
+  height: 100%;
+}
+
+/* Hover nổi lên */
+.student-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
+  border-color: #2563eb;
+}
+
+/* Ảnh sinh viên */
+.student-img {
+  height: 230px;
+  object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+/* Tên sinh viên */
+.student-card .card-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: #1e3a8a;
+}
+
+/* Nội dung thông tin */
+.student-card .card-text {
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+/* Nút */
+.student-card button {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 8px;
+}
+
+.student-card button:hover {
+  opacity: 0.9;
+}
+.student-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.student-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  transform: scale(1.05);
+}
+.content-card {
+  border-radius: 16px;
+  border-left: 6px solid #2563eb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.content-title {
+  color: #1e40af;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
