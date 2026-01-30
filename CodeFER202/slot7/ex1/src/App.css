@@ -1,0 +1,364 @@
+/* =======================
+   GLOBAL
+======================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0d1117;
+  color: #e6edf3;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input,
+select,
+button {
+  font-family: inherit;
+  font-size: 14px;
+}
+
+/* =======================
+   NAV BAR
+======================= */
+.navbar {
+  background-color: #161b22;
+  padding: 12px 24px;
+  border-bottom: 1px solid #30363d;
+}
+
+.navbar a {
+  color: #58a6ff;
+  text-decoration: none;
+  margin-right: 16px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* =======================
+   COMMON CARD
+======================= */
+.exercise-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 24px;
+  max-width: 520px;
+  margin: 0 auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.exercise-card h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* =======================
+   INPUTS
+======================= */
+.exercise-card input,
+.exercise-card select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+.exercise-card input:focus,
+.exercise-card select:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+.exercise-card button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #238636;
+  color: white;
+  font-weight: 500;
+}
+
+.exercise-card button:hover {
+  opacity: 0.9;
+}
+
+/* =======================
+   TEST USE STATE
+======================= */
+.result-text {
+  margin-top: 12px;
+  font-size: 15px;
+}
+
+/* =======================
+   EXERCISE 1 – COUNTER
+======================= */
+.counter-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.counter-box input {
+  width: 80px;
+  text-align: center;
+}
+
+/* =======================
+   EXERCISE 2 – MODAL
+======================= */
+.success-text {
+  margin-top: 12px;
+  color: #3fb950;
+  font-weight: 500;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background-color: #161b22;
+  padding: 24px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-box h4 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.btn-confirm {
+  background-color: #238636;
+  margin-right: 8px;
+}
+
+.btn-cancel {
+  background-color: #da3633;
+}
+
+/* ===== Exercise 3 ===== */
+.exercise-3-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.exercise-3-card {
+  width: 400px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.exercise-3-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.product-form input,
+.product-form select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.product-form input:focus,
+.product-form select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  opacity: 0.85;
+}
+
+.product-preview {
+  margin-top: 20px;
+  background: #f5f5f5
+}
+/* =======================
+   EXERCISE 4 – TODO LIST (FIXED & BEAUTIFUL)
+======================= */
+
+.exercise4-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+}
+
+.exercise4-card {
+  width: 100%;
+  max-width: 520px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+}
+
+.exercise4-card h2 {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* INPUT + BUTTON */
+.todo-input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #30363d;
+  background-color: #0d1117;
+  color: #e6edf3;
+}
+
+.todo-input input::placeholder {
+  color: #8b949e;
+}
+
+.todo-input input:focus {
+  outline: none;
+  border-color: #58a6ff;
+}
+
+.todo-input button {
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background-color: #238636;
+  color: white;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  opacity: 0.9;
+}
+
+/* LIST */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.todo-list li:hover {
+  background-color: #161b22;
+}
+
+/* TEXT */
+.todo-text {
+  font-size: 15px;
+}
+
+/* DELETE BUTTON */
+.todo-list button {
+  background-color: #da3633;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  color: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.todo-list button:hover {
+  opacity: 0.85;
+}
+
+/* =======================
+   NAV BAR
+======================= */
+.navbar {
+  background-color: #161b22;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav-link {
+  color: #8b949e;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #21262d;
+  color: #58a6ff;
+}
+
+.nav-link.active {
+  background-color: #238636;
+  color: white;
+}

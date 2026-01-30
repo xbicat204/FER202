@@ -1,0 +1,62 @@
+/* Toàn bộ navbar */
+.navbar {
+  background-color: #111 !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Logo Pizza House */
+.navbar-brand {
+  color: #f5b301 !important;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #ffcc33 !important;
+}
+
+/* Link menu */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-right: 20px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+/* Hover link */
+.navbar-nav .nav-link:hover {
+  color: #f5b301 !important;
+}
+
+/* Gạch chân khi hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #f5b301;
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Toggle button (mobile) */
+.navbar-toggler {
+  border-color: #f5b301;
+}
+
+.navbar-toggler-icon {
+  filter: invert(80%);
+}
+
+/* Responsive mobile */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin: 10px 0;
+  }
+}
