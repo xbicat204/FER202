@@ -1,0 +1,117 @@
+.register-card {
+  max-width: 600px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.register-card .card-body {
+  padding: 40px;
+}
+
+.register-card .card-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.register-card form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card form > div {
+  flex: 1;
+}
+
+.register-card .form-label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 14px;
+}
+
+.register-card .form-control,
+.register-card .form-select {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.register-card .form-control:focus,
+.register-card .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.register-card .form-control.is-invalid,
+.register-card .form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.register-card .form-control.is-invalid:focus,
+.register-card .form-select.is-invalid:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+}
+
+.register-card .invalid-feedback {
+  display: block;
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.register-card .btn-submit {
+  margin-top: auto;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-card .btn-submit:hover {
+  background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.register-card .btn-submit:active {
+  transform: translateY(0);
+}
+
+.alert {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .register-card {
+    margin: 10px;
+  }
+
+  .register-card .card-body {
+    padding: 20px;
+  }
+
+  .register-card .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,97 @@
+.page h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+/* GRID: TO HƠN – ÍT CỘT HƠN */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.news-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* IMAGE TO HƠN */
+.news-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.news-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.news-content p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: auto;
+}
+
+/* READ MORE */
+.read-more {
+  margin-top: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.news-card:hover .read-more {
+  color: #0d47a1;
+}
+
+@media (max-width: 1200px) {
+  .news-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .news-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .news-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
