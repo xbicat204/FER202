@@ -23,7 +23,15 @@ function NavBar() {
             <Nav.Link as={NavLink} to="/" end>
               Trang chủ
             </Nav.Link>
-
+            <Nav.Link as={NavLink} to="/quiz">
+              Quiz
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/Post">
+              📝 Posts
+            </Nav.Link>
+            <Nav.Link as={NavLink} to="/users">
+              👥 Users
+            </Nav.Link>
             <Nav.Link as={NavLink} to="/news">
               📰 Tin Tức
             </Nav.Link>
@@ -31,6 +39,7 @@ function NavBar() {
             <Nav.Link as={NavLink} to="/about">
               About
             </Nav.Link>
+          
 
             <Nav.Link as={NavLink} to="/register">
               Đăng ký Form

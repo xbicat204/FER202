@@ -10,7 +10,7 @@ function Carousel() {
 
   const [current, setCurrent] = useState(0);
 
-  // Auto slide
+  
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % images.length);

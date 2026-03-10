@@ -1,0 +1,31 @@
+body{
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#667eea,#764ba2);
+  min-height:100vh;
+}
+
+/* login card */
+.login-card{
+  border:none;
+  border-radius:15px;
+  backdrop-filter: blur(10px);
+}
+
+/* button */
+.btn-primary{
+  background:#667eea;
+  border:none;
+}
+
+.btn-primary:hover{
+  background:#5563d1;
+}
+
+/* table container */
+.page-container{
+  background:white;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}

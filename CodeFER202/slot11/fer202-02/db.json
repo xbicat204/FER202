@@ -1,0 +1,139 @@
+{
+  "accounts": [
+    {
+      "id": "1",
+      "username": "fudn",
+      "email": "fudn@fptu.edu.vn",
+      "password": "123456",
+      "role": "admin",
+      "status": "active",
+      "avatar": "/images/users/fudn.png"
+    },
+    {
+      "id": "2",
+      "username": "admin",
+      "email": "admin@mail.com",
+      "password": "123456",
+      "role": "admin",
+      "status": "active",
+      "avatar": "/images/users/admin.png"
+    },
+    {
+      "id": "3",
+      "username": "loanlt",
+      "email": "loanlt@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "status": "locked",
+      "avatar": "/images/users/loanlt.png"
+    },
+    {
+      "id": "4",
+      "username": "thienbao",
+      "email": "thienbao@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "status": "locked",
+      "avatar": "/images/users/thienbao.png"
+    },
+    {
+      "id": "5",
+      "username": "thanhdat",
+      "email": "thanhdat@mail.com",
+      "password": "123456",
+      "role": "user",
+      "status": "locked",
+      "avatar": "/images/users/thanhdat.png"
+    },
+    {
+      "id": "6",
+      "username": "thanhtai",
+      "email": "thanhtai@mail.com",
+      "password": "123456",
+      "role": "user",
+      "status": "locked",
+      "avatar": "/images/users/thanhtai.png"
+    },
+    {
+      "id": "7",
+      "username": "khiemde",
+      "email": "khiem@gmail.com",
+      "password": "123456",
+      "role": "user",
+      "status": "active",
+      "avatar": "/images/users/default.png"
+    },
+    {
+      "id": "8",
+      "username": "anhnv",
+      "password": "123456",
+      "role": "admin",
+      "fullName": "Nguyen Van Anh"
+    },
+    {
+      "id": "9",
+      "username": "TamNT",
+      "password": "123456",
+      "role": "admin",
+      "fullName": "Nguyen Thi Tam"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "1",
+      "userId": "5",
+      "name": "Lunch",
+      "amount": 85000,
+      "category": "Food",
+      "date": "02-10-2025"
+    },
+    {
+      "id": "2",
+      "userId": "5",
+      "name": "Electricity Bill",
+      "amount": 450000,
+      "category": "Utilities",
+      "date": "03-10-2025"
+    },
+    {
+      "id": "3",
+      "userId": "5",
+      "name": "Cinema",
+      "amount": 120000,
+      "category": "Entertainment",
+      "date": "05-10-2025"
+    },
+    {
+      "id": "4",
+      "userId": "5",
+      "name": "Cafe",
+      "amount": 65000,
+      "category": "Food",
+      "date": "07-10-2025"
+    },
+    {
+      "id": "5",
+      "userId": "6",
+      "name": "Breakfast",
+      "amount": 40000,
+      "category": "Food",
+      "date": "01-10-2025"
+    },
+    {
+      "id": "6",
+      "userId": "6",
+      "name": "Internet Bill",
+      "amount": 250000,
+      "category": "Utilities",
+      "date": "03-10-2025"
+    },
+    {
+      "id": "af9a",
+      "name": "cake",
+      "amount": "50000",
+      "category": "Food",
+      "date": "2026-08-03"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
