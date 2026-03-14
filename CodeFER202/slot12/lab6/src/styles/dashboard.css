@@ -1,0 +1,154 @@
+/* ===== PAGE BACKGROUND ===== */
+
+body{
+  background:#f3f4f6;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ===== DASHBOARD CONTAINER ===== */
+
+.dashboard-container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+
+/* ===== NAVBAR ===== */
+
+.dashboard-navbar{
+  background:#1f2933;
+  padding:10px 20px;
+}
+
+.navbar-wrapper{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.brand{
+  color:white !important;
+  display:flex;
+  align-items:center;
+  font-weight:600;
+}
+
+.user-info{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:white;
+}
+
+.avatar{
+  width:32px;
+  height:32px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.logout-btn{
+  background:#ff4d4f !important;
+  color:white !important;
+  border:none;
+  padding:4px 10px;
+  border-radius:4px;
+  font-size:13px;
+}
+
+.logout-btn:hover{
+  background: #212529 !important;
+}
+.logout-btn{
+  text-decoration: none !important;
+  color: white !important;
+  margin-left: 10px;
+
+}
+
+.logout-btn:hover{
+  text-decoration: none !important;
+  color: #ff7875 !important;
+}
+.user-info{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+/* ===== CARD STYLE ===== */
+
+.card{
+  border-radius:8px;
+  border:1px solid #e0e0e0;
+  box-shadow:0 1px 2px rgba(0,0,0,0.05);
+}
+
+.card h5{
+  font-weight:600;
+  margin-bottom:15px;
+}
+
+
+/* ===== TOTAL EXPENSE CARD ===== */
+
+.total-card h3{
+  font-weight:bold;
+  color:#0d6efd;
+}
+
+
+/* ===== FILTER CARD ===== */
+
+.filter-card select{
+  height:38px;
+}
+
+
+/* ===== FORM ===== */
+
+.expense-form label{
+  font-weight:500;
+}
+
+.expense-form button{
+  min-width:70px;
+}
+
+
+/* ===== TABLE ===== */
+
+.expense-table{
+  background:white;
+}
+
+.expense-table th{
+  background:#f8f9fa;
+  font-weight:600;
+  text-align:left;
+}
+
+.expense-table td{
+  vertical-align:middle;
+}
+
+.expense-table button{
+  font-size:13px;
+}
+
+
+/* ===== FOOTER ===== */
+
+.footer{
+  margin-top:auto;
+  background:#212529;
+  color:white;
+  padding:12px 20px;
+  font-size:14px;
+}
+
+.footer span{
+  opacity:0.9;
+}
