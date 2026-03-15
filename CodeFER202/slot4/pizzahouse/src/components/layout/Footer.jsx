@@ -1,23 +1,22 @@
 import React from "react";
 import "./Footer.css";
-import avatar from "../../assets/faker.jpeg";
 
-function Footer() {
+function Footer({ myprofile }) {
   return (
     <footer className="footer">
       <div className="footer-profile">
 
         <img
-          src={avatar}
+          src={myprofile.avatar}
           alt="Profile"
           className="footer-avatar"
         />
 
-        <h3 className="footer-name">Tong Phuc Khiem</h3>
-        <p className="footer-role">Frontend Developer</p>
+        <h3 className="footer-name">{myprofile.name}</h3>
+        <p className="footer-role">{myprofile.role}</p>
 
-        <p className="footer-info">khiemtong2004@gmail.com</p>
-        <p className="footer-info">📞 0356693933</p>
+        <p className="footer-info">{myprofile.email}</p>
+        <p className="footer-info">📞 {myprofile.phone}</p>
 
       </div>
     </footer>
